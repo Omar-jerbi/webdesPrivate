@@ -1,0 +1,72 @@
+@import 'init';
+
+
+.dark{
+    color: $txtcolor3;
+    background-color: $bgcolor2;
+    font-weight: 500;
+    
+    *{
+        border-color: $txtcolor4;
+    }
+}
+
+
+
+header{
+    width: 90vw;
+    height: 10vh;
+    border-bottom:solid 2px $txtcolor2;
+    padding: 1rem 5vw;
+
+    display: flex;
+    flex-direction: row;
+    nav{
+        width: 35vw;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: row;
+
+        .menu-logo{ 
+            width: 10vw;
+            transition: all 1s;
+
+            .bar{
+                width: 10vw;
+                margin-top: 1rem;
+                border-bottom: solid 1px $txtcolor2;
+            }
+
+            .dark-menu{
+                border-color: $txtcolor4;
+            }
+
+        }
+        
+        .rotate{
+            transform: rotate(90deg);
+        }
+
+
+        .menu-options{
+            font-weight: 500;
+            width: 20vw;
+            margin: 0.8rem 5vw;
+            opacity: 0;
+            transition: all 1s;
+        }
+        
+        .showing{
+            opacity: 100;
+        }
+    }
+
+    .search{
+        margin: auto auto;
+    }
+
+    .dl{
+        margin: auto auto;
+    }
+
+}

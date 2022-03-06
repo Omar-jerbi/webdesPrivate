@@ -1,0 +1,26 @@
+$bgcolor1: rgb(30, 36, 32);
+$txtcolor1: rgb(104, 238, 193);
+$txtcolor2: rgb(236, 238, 104);
+
+$bgcolor2: rgb(236, 217, 217);
+$txtcolor3:rgb(22, 26, 29);
+$txtcolor4:rgb(30, 24, 34);
+
+
+@function dark($color){
+
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    position:relative;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $txtcolor1;
+    background-color: $bgcolor1;
+}
