@@ -1,0 +1,54 @@
+@import 'init';
+
+.hmod{
+    height: 15vh;
+}
+
+header{
+    height: 8vh;
+    width: 100vw;
+    padding: 2rem 2rem;
+    transition: all 1.3s;
+    
+    .menu{
+        width: 8%;
+        right: auto;
+        left: auto;
+        transition: all 1s ease-in-out;
+    }
+    
+    .bars{
+        width: 100%;
+        border-bottom: solid 2px $txt-color1;
+        margin-top: 0.6rem;
+    }
+
+    .open{
+        width: 87%;
+        .bar3{
+            border-bottom: solid 3px $txt-color2;
+        }
+    }
+
+    .menu-options{
+        opacity: 0;
+        transition: all 1s;
+        div{
+            margin: 1rem 35%;
+        }
+    }
+
+    .showing{
+        opacity: 100;
+    }
+
+}
+
+
+
+
+main{
+    width: 100vw;
+    height: 80vh;
+    border-top: solid 2px $txt-color1;
+}

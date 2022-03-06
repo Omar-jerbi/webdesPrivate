@@ -1,0 +1,91 @@
+@import "init";
+
+
+body{
+    background-color: $dark-bg;
+    color: $light-txt
+}
+
+header{
+    height: 35vh;
+    padding-bottom: 5rem;
+    border-bottom: 2px solid white;
+}
+
+main{
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-top:20vh;
+    padding-bottom:20vh;
+    text-align: center;
+}
+
+.button_nav{
+    font-weight: 700;
+    letter-spacing: 0.25rem;
+    text-align: center;
+    margin: 10rem 10rem 1rem 10rem;
+    padding: 1rem 5rem;
+    background-color: lighten($color: $dark-bg, $amount: 5);
+    transition: all 0.5s ease-out;
+}
+
+.go_away{
+    transform:translateY(-30vh);
+}
+
+
+.hidden{
+    display: none;
+}
+
+
+
+.to-show-hide{
+    
+    font-weight: 600;
+    letter-spacing: 0.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    
+    
+    .a-home{
+        display: inline;
+        position: relative;
+        color: aqua;
+        margin-right: 2rem;
+        padding: 3rem 5rem;
+        background-color: lighten($color: $dark-bg, $amount: 5);
+        
+        right: 50vw;
+        transition: all 1s;
+        
+    }
+    
+    .come_in{
+        right: 0vw;
+    }
+
+
+
+    .a-about{
+        display: inline;
+        position: relative;
+        background-color: lighten($color: $dark-bg, $amount: 5);
+        margin-left: 2rem;
+        padding: 3rem 5rem;
+        display: inline;
+        color: aqua;
+        
+        left: 50vw;
+        transition: all 1s;
+    }
+
+    
+    .come_in2{
+        left: 0vw;
+    }
+
+}
