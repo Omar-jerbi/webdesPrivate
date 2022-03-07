@@ -1,0 +1,86 @@
+@import 'init';
+
+body{
+    background-color: $bgcolor1;
+    color: $txtcolor1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.5s;
+}
+
+.menu-body{
+    background-color: rgb(56, 55, 55);
+    color: rgb(34, 33, 33);
+}
+
+.header-mod{
+    border:none;
+}
+
+
+header{
+    height: 10vh;
+    width: 100vw;
+    border-bottom: solid 1px $txtcolor1;
+    transition: all 0.5s;
+    transition-delay: 0.3s;
+
+
+    display: flex;
+    flex-direction: row;
+
+    nav{
+        width: 20vw;        
+        .menu{
+            opacity: 60%;
+            position: absolute;
+            top: 0px;
+            right: 20vw;//da modif
+            height: 100vh;
+            width: 50vw;
+            background-color: $txtcolor1;
+            color: $bgcolor1;
+            transition: all 1s;
+
+            .menu-opt{
+                margin: 6vh 20vw;
+            }
+        }
+
+        .menu-show{
+            right: -30vw;//da modif
+            z-index: 3;
+        }
+        
+        .menu-logo{
+            .bar{
+                width: 15vw;
+                margin: 10px 1vw;
+                border-bottom: solid 2px $txtcolor1;
+                transition: all 1s;
+            }
+
+            .bar-reduc{
+                width: 0;
+                margin: 10px 0;
+            }
+        }
+
+
+    }
+
+    .filler{
+        width: 50vw;
+    }
+
+    .dl{
+        width: 30vw;
+        text-align: center;
+        
+        h5{
+            font-size: x-large;
+            padding-top: 2vh;
+        }
+    }
+
+}
+

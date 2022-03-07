@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body {
+  background-color: #0d0f72;
+  color: #d3d6c3;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.menu-body {
+  background-color: #383737;
+  color: #222121;
+}
+
+.header-mod {
+  border: none;
+}
+
+header {
+  height: 10vh;
+  width: 100vw;
+  border-bottom: solid 1px #d3d6c3;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header nav {
+  width: 20vw;
+}
+
+header nav .menu {
+  opacity: 60%;
+  position: absolute;
+  top: 0px;
+  right: 20vw;
+  height: 100vh;
+  width: 50vw;
+  background-color: #d3d6c3;
+  color: #0d0f72;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+header nav .menu .menu-opt {
+  margin: 6vh 20vw;
+}
+
+header nav .menu-show {
+  right: -30vw;
+  z-index: 3;
+}
+
+header nav .menu-logo .bar {
+  width: 15vw;
+  margin: 10px 1vw;
+  border-bottom: solid 2px #d3d6c3;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+header nav .menu-logo .bar-reduc {
+  width: 0;
+  margin: 10px 0;
+}
+
+header .filler {
+  width: 50vw;
+}
+
+header .dl {
+  width: 30vw;
+  text-align: center;
+}
+
+header .dl h5 {
+  font-size: x-large;
+  padding-top: 2vh;
+}
+/*# sourceMappingURL=main.css.map */
