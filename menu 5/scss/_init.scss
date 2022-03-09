@@ -2,14 +2,14 @@ $bglight1:rgb(235, 226, 226);
 $txtlight1: rgb(58, 51, 51);
 
 $bgdark1:rgb(43, 33, 33);
-$txtdark1: rgb(194, 185, 185);
+$txtdark1: rgb(243, 226, 188);
 
 
 *{
     margin: 0;
     padding: 0;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 body{
@@ -19,5 +19,4 @@ body{
     color: $txtlight1;
     width: 100vw;
     height: 100vh;
-
 }

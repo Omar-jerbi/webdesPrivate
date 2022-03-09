@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body {
@@ -16,7 +16,15 @@ body {
 
 header {
   height: 10vh;
+  width: 100vw;
   border-bottom: solid 1px #3a3333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 main {
@@ -26,4 +34,34 @@ main {
 
 footer {
   height: 20vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header nav {
+  text-align: center;
+  width: 50vw;
+  padding-top: 3%;
+}
+
+header nav a {
+  margin-right: 3vw;
+}
+
+header .search {
+  width: 30vw;
+  padding-top: 3%;
+}
+
+header .dark-light {
+  text-align: center;
+  padding-top: 3%;
+  width: 20vw;
+}
+
+header .dark-light button {
+  padding: 1vh 3vw;
 }

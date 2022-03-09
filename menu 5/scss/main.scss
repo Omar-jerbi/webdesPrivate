@@ -1,2 +1,29 @@
 @import 'init';
-@import 'tags'
+@import 'tags';
+
+header{
+    nav{
+        text-align: center;
+        width: 50vw;
+        padding-top: 3%;
+        a{
+            margin-right: 3vw;
+        }
+    }
+
+    .search{
+        width: 30vw;
+        padding-top: 3%;
+    }
+
+    .dark-light{
+        text-align: center;
+        padding-top: 3%;
+        width: 20vw;
+
+        button{
+            padding: 1vh 3vw;
+            
+        }
+    }
+}
