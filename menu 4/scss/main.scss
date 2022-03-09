@@ -1,19 +1,34 @@
 @import 'init';
 
+
+
+.dark{
+    background-color: $bgcolor2;
+    color: $txtcolor2;
+}
+
+
 body{
     background-color: $bgcolor1;
     color: $txtcolor1;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: all 0.5s;
+    width: 100vw;
+    height: 100vh;
 }
 
+
 .menu-body{
-    background-color: rgb(56, 55, 55);
-    color: rgb(34, 33, 33);
+    background-color: $menubg;
+    color: $menutxt;
 }
 
 .header-mod{
     border:none;
+}
+
+.header-border-dark{
+    border-color: $txtcolor2;
 }
 
 
@@ -22,7 +37,7 @@ header{
     width: 100vw;
     border-bottom: solid 1px $txtcolor1;
     transition: all 0.5s;
-    transition-delay: 0.3s;
+    //transition-delay: 0.0s;
 
 
     display: flex;
@@ -31,12 +46,11 @@ header{
     nav{
         width: 20vw;        
         .menu{
-            opacity: 60%;
+            opacity: 0%;
             position: absolute;
             top: 0px;
-            right: 20vw;//da modif
             height: 100vh;
-            width: 50vw;
+            width: 0vw;
             background-color: $txtcolor1;
             color: $bgcolor1;
             transition: all 1s;
@@ -47,7 +61,8 @@ header{
         }
 
         .menu-show{
-            right: -30vw;//da modif
+            opacity: 60%;
+            width: 50vw;
             z-index: 3;
         }
         
@@ -62,6 +77,10 @@ header{
             .bar-reduc{
                 width: 0;
                 margin: 10px 0;
+            }
+
+            .border-dark{
+                border-color: $txtcolor2;
             }
         }
 
@@ -79,8 +98,31 @@ header{
         h5{
             font-size: x-large;
             padding-top: 2vh;
+
+            .highlight{
+                color: orangered;
+            }
+
         }
     }
 
+}
+
+
+.mini{
+    font-size: small;
+}
+
+
+main{
+    height: 70vh;
+    width: 96vw;
+    padding-top: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+footer{
+    height: 16vh;
 }
 

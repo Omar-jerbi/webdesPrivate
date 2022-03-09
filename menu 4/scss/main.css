@@ -4,12 +4,19 @@
   position: relative;
 }
 
+.dark {
+  background-color: #f5c3c3;
+  color: #331818;
+}
+
 body {
-  background-color: #0d0f72;
+  background-color: #00012b;
   color: #d3d6c3;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  width: 100vw;
+  height: 100vh;
 }
 
 .menu-body {
@@ -21,14 +28,16 @@ body {
   border: none;
 }
 
+.header-border-dark {
+  border-color: #331818;
+}
+
 header {
   height: 10vh;
   width: 100vw;
   border-bottom: solid 1px #d3d6c3;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,14 +52,13 @@ header nav {
 }
 
 header nav .menu {
-  opacity: 60%;
+  opacity: 0%;
   position: absolute;
   top: 0px;
-  right: 20vw;
   height: 100vh;
-  width: 50vw;
+  width: 0vw;
   background-color: #d3d6c3;
-  color: #0d0f72;
+  color: #00012b;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -60,7 +68,8 @@ header nav .menu .menu-opt {
 }
 
 header nav .menu-show {
-  right: -30vw;
+  opacity: 60%;
+  width: 50vw;
   z-index: 3;
 }
 
@@ -77,6 +86,10 @@ header nav .menu-logo .bar-reduc {
   margin: 10px 0;
 }
 
+header nav .menu-logo .border-dark {
+  border-color: #331818;
+}
+
 header .filler {
   width: 50vw;
 }
@@ -89,5 +102,25 @@ header .dl {
 header .dl h5 {
   font-size: x-large;
   padding-top: 2vh;
+}
+
+header .dl h5 .highlight {
+  color: orangered;
+}
+
+.mini {
+  font-size: small;
+}
+
+main {
+  height: 70vh;
+  width: 96vw;
+  padding-top: 2vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+footer {
+  height: 16vh;
 }
 /*# sourceMappingURL=main.css.map */
