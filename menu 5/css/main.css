@@ -38,7 +38,36 @@ footer {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #5a5757;
+}
+
+a:hover {
+  color: #d60e0e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  background-color: #ebe2e2;
+  color: #3a3333;
+  width: 100vw;
+  height: 100vh;
+}
+
+header nav .selected {
+  color: #d60e0e;
+}
+
+.dark {
+  background-color: #2b2121;
+  color: #f3e2bc;
 }
 
 header nav {
@@ -57,11 +86,68 @@ header .search {
 }
 
 header .dark-light {
-  text-align: center;
-  padding-top: 3%;
   width: 20vw;
+  margin-top: 3%;
+  /* Hide default HTML checkbox */
+  /* The slider */
+  /* Rounded sliders */
 }
 
-header .dark-light button {
-  padding: 1vh 3vw;
+header .dark-light .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+header .dark-light .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+header .dark-light .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+header .dark-light .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+header .dark-light input:checked + .slider {
+  background-color: #635353;
+}
+
+header .dark-light input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #635353;
+          box-shadow: 0 0 1px #635353;
+}
+
+header .dark-light input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+header .dark-light .slider.round {
+  border-radius: 34px;
+}
+
+header .dark-light .slider.round:before {
+  border-radius: 50%;
 }
